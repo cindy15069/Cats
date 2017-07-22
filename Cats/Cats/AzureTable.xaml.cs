@@ -1,4 +1,5 @@
-﻿using Microsoft.WindowsAzure.MobileServices;
+﻿using Cats.DataModels;
+using Microsoft.WindowsAzure.MobileServices;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,5 +19,11 @@ namespace Cats
 		{
 			InitializeComponent();
 		}
-	}
+        async void Handle_ClickedAsync(object sender, System.EventArgs e)
+        {
+            List<NotCatModel> notCatInformation = await AzureManager.AzureManagerInstance.GetCatInformation();
+
+            CatList.ItemsSource = notCatInformation;
+        }
+    }
 }
