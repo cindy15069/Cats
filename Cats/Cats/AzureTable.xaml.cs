@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.WindowsAzure.MobileServices;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,8 @@ namespace Cats
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class AzureTable : ContentPage
 	{
-		public AzureTable()
+        MobileServiceClient client = AzureManager.AzureManagerInstance.AzureClient;
+        public AzureTable()
 		{
 			InitializeComponent();
 		}
