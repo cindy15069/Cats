@@ -12,10 +12,10 @@ namespace Cats.DataModels
         [JsonProperty(PropertyName = "Id")]
         public string ID { get; set; }
 
-        [JsonProperty(PropertyName = "Longitude")]
-        public float Longitude { get; set; }
+        [JsonProperty(PropertyName = "Type")]
+        public string Type { get; set; }
 
-        [JsonProperty(PropertyName = "Latitude")]
-        public float Latitude { get; set; }
+        [JsonProperty(PropertyName = "Age")]
+        public string Age { get; set; }
     }
 }
