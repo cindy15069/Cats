@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Cats.CatInformation" Title="More Info">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Label Text="Adopt Instead Of Buying" VerticalOptions="Center" HorizontalOptions="Center" Font="Bold,20" />
+            <Image Source="image.png" />
+            <Label Text="> Adoption helps stop pet overpopulation" VerticalOptions="Start" HorizontalOptions="Start" />
+            <Label Text="> Adoption saves lives" VerticalOptions="Start" HorizontalOptions="Start" />
+            <Label Text="> Adoption gives a second chance" VerticalOptions="Start" HorizontalOptions="Start" />
+            <Label Text="> Adoption often costs less" VerticalOptions="Start" HorizontalOptions="Start" />
+            <Button Text="Click Here For More Info!" BorderWidth="0" Clicked="OnButtonClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
